@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: |
            apt-get update
-           apt-get install software-properties-common
+           apt-get install -y software-properties-common
            add-apt-repository ppa:npalix/coccinelle
            apt update
            apt install build-essential clang flex g++ gawk gcc-multilib gettext git libelf-dev libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev  coccinelle

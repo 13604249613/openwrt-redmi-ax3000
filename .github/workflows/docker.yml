@@ -12,13 +12,13 @@ jobs:
     steps:
       - name: Free disk space
         run: |
-          sudo rm -rf /usr/share/dotnet /usr/local/lib/android
+           rm -rf /usr/share/dotnet /usr/local/lib/android
 
       - name: Install dependencies
         run: |
-          sudo add-apt-repository ppa:npalix/coccinelle
-          sudo apt update
-          sudo apt install build-essential clang flex g++ gawk gcc-multilib gettext git libelf-dev libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev  coccinelle
+           add-apt-repository ppa:npalix/coccinelle
+           apt update
+           apt install build-essential clang flex g++ gawk gcc-multilib gettext git libelf-dev libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev  coccinelle
             
 
 

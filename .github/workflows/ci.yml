@@ -53,6 +53,11 @@ jobs:
             CONFIG_REPRODUCIBLE_DEBUG_INFO=y
 
             CONFIG_PACKAGE_luci=y
+            CONFIG_PACKAGE_kmod-wireguard=y
+            CONFIG_PACKAGE_luci-app-wireguard=y
+            CONFIG_PACKAGE_luci-proto-wireguard=y
+            CONFIG_PACKAGE_wireguard-tools=y
+            CONFIG_PACKAGE_luci-i18n-wireguard-zh-cn=y
           EOF
           make defconfig
 
